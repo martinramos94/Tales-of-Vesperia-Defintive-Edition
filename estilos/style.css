@@ -1,0 +1,519 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+img{
+    width: 100%;
+    margin: 0;
+}
+iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+body{
+    max-width: 1680px;   
+    line-height: 1.8rem;   
+    background-image: url(../imagenes/fondo/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover ;
+    
+}
+a{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+header>h1{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header>div{
+    width: 50%;
+}
+
+nav>ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav>ul>li{
+    list-style: none;
+    padding:1rem;
+    margin: 10px;
+    display:inline-block;
+    background-color: rgba(141, 221, 221, 0.815);
+    border-radius: 25px;    
+}
+audio{
+    width: 50%;
+    margin: 0.5rem;
+}
+main{
+    padding: 1.8rem;
+   background-color: rgba(90, 139, 230, 0.548);
+   
+    
+}
+h2{
+    text-decoration: underline;
+    padding: 1rem 0 ;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+h3{
+    padding: 1rem 0 0.5rem 0;
+    font-weight: 600;
+
+}
+section{
+    margin: 1rem 0 1.8rem 0;
+}
+p{
+    text-indent: 12px;
+    padding: 0 0 12px 0;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    
+
+}
+.introduccion div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.introduccion p{
+    padding: 1rem;
+}
+.introduccion img{
+    width: 50%;
+   
+    
+}
+.carcteristicasPrincipales a{
+    display: none;
+}
+.personajes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;    
+
+}
+.personajes img{
+    width: 50%;
+    margin: 1rem 0;
+} 
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+      
+}
+.formulario div{
+    padding: 0.4rem 0;
+}
+
+.formulario img{
+    width: 50%;
+}
+.formulario label{
+    margin: 0 0.5rem 0 1rem;
+}
+.formulario button{
+    height: 50px;
+    width: 70px;
+    padding: 0;
+}
+footer{
+    background-color: rgb(13, 13, 78);
+    color: rgb(228, 236, 243);
+}
+footer>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    padding: 25px;
+}
+
+footer img{
+    width: 250px;
+    padding: 1rem;
+}
+
+
+
+/*mobile*/
+@media screen  and (min-width: 420px) and (max-width: 672px) {
+
+.audio{
+    display: none;
+}
+h2{
+    text-decoration: underline;
+    padding: 1rem 0 ;
+    margin: 1rem 0;
+}
+h3{
+    padding: 1rem 0 0.5rem 0;
+
+}
+section{
+    margin: 1rem 0 1.8rem 0;
+}
+p{
+    text-indent: 12px;
+    padding: 0 0 12px 0;
+}
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+.introduccion>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    padding: 0;
+    margin: 0;
+    
+}
+.introduccion ul{
+    padding: 25px;
+}
+.introduccion img{
+    width: 100%;   
+}
+
+.carcteristicasPrincipales a{
+    display:contents;
+}
+.carcteristicasPrincipales iframe{
+    display: none;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.formulario{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    font-size: 18px;
+}
+.formulario div{
+    margin: 0;
+    padding: 0;
+}
+.formulario label{
+    display: block;
+    margin: 0 ;
+    padding: 0;
+}
+.formulario input,select{
+    margin: 0 ;
+    font-size: 18px;
+}
+.formulario select{
+    height: 2rem;
+}
+.formulario img{
+    display: none;
+}
+.formulario button{
+    border-radius: 25px;
+    width: 30%;
+    font-size: 16px;
+}
+
+
+}
+
+
+
+/*TABLET*/
+@media screen and (min-width:673px) and (max-width:990px){
+   
+    .audio{
+            display: none;
+    }
+    .introduccion{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .introduccion>div{
+        width: 70%;
+        margin: 5px;
+    }
+
+    .personajes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;    
+
+    }
+    .personajes h3{
+        padding: 1rem;
+    }
+    .flex-yuri
+    ,.flex-flynn
+    ,.flex-rita
+    ,.flex-judith
+    ,.flex-patty{
+
+       display: flex;   
+       flex-direction: row-reverse;
+       flex-wrap: nowrap;
+    }
+    .flex-estellise
+    ,.flex-repede
+    ,.flex-karol
+    ,.flex-raven{
+
+       display: flex;   
+       flex-direction: row;
+       flex-wrap: nowrap;
+    }
+
+    .flex-yuri div
+    ,.flex-estellise div
+    ,.flex-flynn div
+    ,.flex-judith div
+    ,.flex-repede div
+    ,.flex-rita div
+    ,.flex-karol div
+    ,.flex-raven div
+    ,.flex-patty div{
+        width: 50%;
+        padding: 1rem;
+    }
+    .flex-yuri img
+    ,.flex-estellise img
+    ,.flex-flynn img
+    ,.flex-judith img
+    ,.flex-repede img
+    ,.flex-rita img
+    ,.flex-karol img
+    ,.flex-raven img
+    ,.flex-patty img{
+        width: 100%;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: row;
+        font-family: "Google Sans", sans-serif;
+
+    }
+    .formulario input,.formulario select{
+        font-size: 1rem;
+    }
+    .formulario button{
+        border-radius: 15px;
+        width: 80px;
+        font-size: 16px;
+         font-family: "Google Sans", sans-serif;
+    }
+
+
+
+}
+
+
+
+/*DESKTOP*/
+@media screen and (min-width:991px) and (max-width:1296px) {
+
+header>div{
+    width: 30%;
+}   
+nav{
+    width: 100%;
+    position: sticky;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.932);
+    z-index: 1;
+}
+audio{
+    z-index: -1;
+}
+
+a:hover{
+        background-color: rgb(109, 146, 247);
+}
+a:active{
+        background-color: rgb(0, 238, 255);
+}
+a:visited{
+            color: rgb(78, 33, 184);
+}
+h2{
+    padding-top: 88px;
+}
+
+.personajes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:stretch ;
+    justify-content: space-evenly;
+    gap: 10px;    
+        
+}
+.personajes h3{
+    padding: 1rem;
+    width: 50%;
+}
+.yuri
+,.estellise
+,.flynn
+,.judith
+,.repede
+,.rita
+,.karol
+,.raven
+,.patty{
+    width: 40%;
+    padding: 8px;
+    border-color: rgba(128, 128, 128, 0.623);
+    border-style:groove;
+    border-width: 2px;
+    
+}
+
+.flex-yuri
+,.flex-flynn
+,.flex-rita
+,.flex-judith
+,.flex-patty
+,.flex-estellise
+,.flex-repede
+,.flex-karol
+,.flex-raven{
+    
+   display: flex;   
+   flex-direction: column;
+   flex-wrap: nowrap;
+   padding: 5px;
+   
+} 
+.flex-yuri div
+,.flex-estellise div
+,.flex-flynn div
+,.flex-judith div
+,.flex-repede div
+,.flex-rita div
+,.flex-karol div
+,.flex-raven div
+,.flex-patty div{
+    
+    padding: 0.5rem;
+    
+} 
+.flex-yuri img
+,.flex-estellise img
+,.flex-flynn img
+,.flex-judith img
+,.flex-repede img
+,.flex-rita img
+,.flex-karol img
+,.flex-raven img
+,.flex-patty img{
+    width: 100%;
+    align-content: space-between;
+} 
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.formulario{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-family: "Google Sans", sans-serif;
+        align-items: center;
+
+    }
+.formulario div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    width: 50%;    
+}
+.formulario .figura{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .formulario input,.formulario select{
+        font-size: 1rem;
+    }
+    .formulario button{
+        border-radius: 15px;
+        width: 80px;
+        font-size: 16px;
+         font-family: "Google Sans", sans-serif;
+    }
+.formulario .boton{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+button:hover{
+    background-color: rgb(224, 221, 221);
+}
+button:active{
+    background-color: rgb(153, 152, 152);
+}
+
+}
